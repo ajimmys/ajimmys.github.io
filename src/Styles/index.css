@@ -1,0 +1,78 @@
+:root{
+  --primary-one: #C9C9C9;
+  --primary-two: #201E1F;
+  --primary-three: #F7F7FF;
+  --secondary-color: #224870;
+  --accent-one: #35FF69;
+  --accent-two: #307351;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-one);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content{
+  padding-top: 4vh;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:1;
+  min-height: 4vh;
+
+  display: flex;
+  justify-content:flex-end;
+  background-color: var(--secondary-color);
+  transition: all .7s ease-in;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: var(--primary-three);
+  text-align: center;
+  padding: 1vh .75vw;
+  text-decoration: none;
+
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.navbar li a:hover {
+  color: var(--accent-one);
+  text-shadow: 0 0 20px var(--accent-two);
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.reference-nav-logo{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  filter: invert(100%) sepia(0%) saturate(505%) hue-rotate(248deg) brightness(114%) contrast(82%);
+}
+
+.reference-nav-logo:hover{
+  filter: invert(49%) sepia(80%) saturate(3346%) hue-rotate(186deg) brightness(91%) contrast(94%);
+}
+
